@@ -363,6 +363,12 @@ namespace Ldtpd
                 comboBox = null;
             }
         }
+        [XmlRpcMethod("comboselectindex",
+            Description = "Select combo box / layered pane item based on index.")]
+        public int ComboSelectIndex(String windowName, String objName, int index)
+        {
+            return SelectIndex(windowName, objName, index);
+        }
         [XmlRpcMethod("getallitem",
             Description = "Get all combo box item based on name.")]
         public string[] GetAllItem(String windowName, String objName)
@@ -1019,6 +1025,36 @@ namespace Ldtpd
             try
             {
                 return tree.DoubleClickRow(windowName, objName, text);
+            }
+            finally
+            {
+                tree = null;
+            }
+        }
+        [XmlRpcMethod("singleclickrow",
+            Description = "Single click on row text.")]
+        public int SingleClickRow(String windowName, String objName,
+            String text)
+        {
+            Tree tree = new Tree(this);
+            try
+            {
+                return tree.SingleClickRow(windowName, objName, text);
+            }
+            finally
+            {
+                tree = null;
+            }
+        }
+        [XmlRpcMethod("doubleclickrowindex",
+            Description = "Double click on row index.")]
+        public int DoubleClickRow(String windowName, String objName,
+            int row, int column = 0)
+        {
+            Tree tree = new Tree(this);
+            try
+            {
+                return tree.DoubleClickRowIndex(windowName, objName, row, column);
             }
             finally
             {

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WinLdtpdService")]
-[assembly: AssemblyDescription("Windows LDTP service")]
+[assembly: AssemblyTitle("TestLdtpClient")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("VMware Inc")]
-[assembly: AssemblyProduct("WinLdtpdService")]
-[assembly: AssemblyCopyright("Copyright © Nagappan Alagappan 2011, VMware Inc 2011")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("TestLdtpClient")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f0c8ac98-8c96-40f3-8d51-0ef5b40343ec")]
+[assembly: Guid("295a127a-df4d-4371-8c88-6106df6ffdad")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.5.0.0")]
-[assembly: AssemblyFileVersion("3.5.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
